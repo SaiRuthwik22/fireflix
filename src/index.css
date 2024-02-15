@@ -1,0 +1,254 @@
+body{
+  background: #626262;
+}
+.container{
+  margin: 1% 1%;
+  display: flex;
+  background-color: aliceblue;
+  
+}
+.container .box{
+  height: 510px;
+  width: 270px;
+  border-radius: 5px;
+  /* ORG : box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin: 15px 20px;
+  
+}
+.container .box img{
+  width: 270px;
+  height: 410px;
+  border-radius: 5px;
+  
+}
+footer{
+ 
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+
+}
+.main-content{
+  display: flex;
+  color: white;
+
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.box .contentfoo{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .contentfoo:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .contentfoo:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #ff3d00;
+  top: -10px;
+}
+.left .contentfoo p{
+  text-align: justify;
+}
+.left .contentfoo .social{
+  margin: 20px 0 0 0;
+}
+.left .contentfoo .social a{
+  padding: 0 2px;
+  color: white;
+}
+.left .contentfoo .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .contentfoo .social a span:hover{
+  background: #ff3d00;
+}
+.center .contentfoo .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .contentfoo .fas:hover{
+  background: #ff3d00;
+}
+.center .contentfoo .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .contentfoo .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #ff3d00;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color:#ff3d00;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+.btndl {
+  margin-top: 3px;
+  color: white;
+  background-color:darkblue;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btndl a:-webkit-any-link{
+  text-decoration: none;
+  color: white;
+}
+
+.infobox{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: flex-start;
+  padding: 20px;
+  color: white;
+  background-color:rgba(103, 95, 95, 0.738);
+  padding: 50px;
+  gap: 50px;
+  width: 100%;
+  margin: 0 auto 30px auto;  
+}
+
+
+.infotextbox{
+  background-color: rgba(21, 22, 22, 0.675);
+  width: 100%;
+  margin-top: 40px;
+  line-height: 40px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 40px;
+}
+
+.btndl a{
+  color: white;
+  font-family: 'poppins', sans-serif;
+}
+
+.infobox .btndl{
+  margin: 20px;
+}
+
+.infobox a{
+  font-family: 'poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+#poster{
+  width: 26%;
+  margin: 50px;
+  margin-top: 85px;
+  border-radius: 5px;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+}
